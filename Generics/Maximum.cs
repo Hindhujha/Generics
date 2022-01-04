@@ -244,6 +244,19 @@ namespace Generics
             }
 
         }
+        //REFACTOR1-FIND MAXIMUM IN ALL VARIABLES
+        List<Numbers> type = new List<Numbers>();
+        public void Refactor1()
+        {
+            Maximum maximum = new Maximum();
+            maximum.ReadInput();
+            maximum.Max();
+            maximum.Read_FloatInput();
+            maximum.fMax();
+            maximum.Read_StringInput();
+            maximum.Strings();
+
+        }
 
     }
 

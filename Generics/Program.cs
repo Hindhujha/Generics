@@ -24,6 +24,7 @@ namespace Generics
                 Console.WriteLine("10.MAXIMUM CHARACTERS IN STRING AT FIRST POSITION");
                 Console.WriteLine("11.MAXIMUM CHARACTERS IN STRING AT SECOND POSITION");
                 Console.WriteLine("12.MAXIMUM CHARACTERS IN STRING AT THIRD POSITION");
+                Console.WriteLine("13.REFACTOR ALL IN ONE GENERIC METHOD");
                 Console.WriteLine("ENTER AN OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -99,7 +100,10 @@ namespace Generics
                         strings3.Strings();
                         strings3.Strings_Third_Position();
                         break;
-
+                    case 13:
+                        Maximum maximum=new Maximum();
+                        maximum.Refactor1();
+                        break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");
                         break;
