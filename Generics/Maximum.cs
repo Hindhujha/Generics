@@ -11,6 +11,7 @@ namespace Generics
      List<int> num = new List<int>();
         public int max;
         public float fmax;
+        public string temp;
    
         public void ReadInput()
         {
@@ -172,7 +173,7 @@ namespace Generics
             str.Add(Str1);
             str.Add(Str2);
             str.Add(Str3);
-      
+            Console.WriteLine("STRINGS ARE:");
             foreach (string elements in str)
             {
                 Console.WriteLine(elements);
@@ -185,17 +186,34 @@ namespace Generics
           if(len1>len2 && len1>len3 )
             {
                 Console.WriteLine("MAXIMUM CHARACTERS IN STRING IS:" + Str1);
+                temp = Str1;
             }
           else if(len2>len1 && len2>len3)
             {
                 Console.WriteLine("MAXIMUM CHARACTERS IN STRING IS:" + Str2);
+                temp = Str2;
             }
           else
             {
                 Console.WriteLine("MAXIMUM CHARACTERS IN STRING IS:" + Str3);
+                temp = Str3;
             }
         }
+        //MAXIMUM FLOATING VALUE AT FIRST POSITION
+        public void Strings_First_Position()
+        {
 
+            if (str[0] == temp)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT FIRST POSITION:" + str[0]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT FIRST POSITION:");
+            }
+
+        }
 
     }
 
