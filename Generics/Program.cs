@@ -15,6 +15,8 @@ namespace Generics
                 Console.WriteLine("1.MAXIMUM VALUE OF 3 INTEGERS");
                 Console.WriteLine("2.MAXIMUM NUMBER AT FIRST POSITION");
                 Console.WriteLine("3.MAXIMUM NUMBER AT SECOND POSITION");
+                Console.WriteLine("4.MAXIMUM NUMBER AT THIRD POSITION");
+
                 Console.WriteLine("ENTER AN OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -37,6 +39,12 @@ namespace Generics
                         intmax2.ReadInput();
                         intmax2.Max();
                         intmax2.Second_Position();
+                        break;
+                    case 4:
+                        Maximum intmax3 = new Maximum();
+                        intmax3.ReadInput();
+                        intmax3.Max();
+                        intmax3.Third_Position();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");

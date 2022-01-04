@@ -35,7 +35,7 @@ namespace Generics
             Console.WriteLine("MAXIMUM NUMBER IS:" + max);
         
         }
-
+        //MAXIMUM NUMBER AT FIRST POSITION
         public void First_Position()
         {
          
@@ -50,6 +50,7 @@ namespace Generics
             }
 
         }
+        //MAXIMUM NUMBER AT SECOND POSITION
         public void Second_Position()
         {
 
@@ -64,7 +65,21 @@ namespace Generics
             }
 
         }
+        //MAXIMUM NUMBER AT THIRD POSITION
+        public void Third_Position()
+        {
 
+            if (num[2] == max)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT THIRD POSITION:" + num[2]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT THIRD POSITION:");
+            }
+
+        }
 
 
     }
