@@ -109,6 +109,21 @@ namespace Generics
             Console.WriteLine("MAXIMUM NUMBER IS:" + fmax);
 
         }
+        //MAXIMUM FLOATING VALUE AT FIRST POSITION
+        public void Float_First_Position()
+        {
+
+            if (fnum[0] == fmax)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT FIRST POSITION:" + fnum[0]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT FIRST POSITION:");
+            }
+
+        }
 
 
     }

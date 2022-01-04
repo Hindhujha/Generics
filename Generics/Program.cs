@@ -17,7 +17,7 @@ namespace Generics
                 Console.WriteLine("3.MAXIMUM NUMBER AT SECOND POSITION");
                 Console.WriteLine("4.MAXIMUM NUMBER AT THIRD POSITION");
                 Console.WriteLine("5.MAXIMUM VALUE OF 3 FLOATING VALUES");
-
+                Console.WriteLine("6.MAXIMUM FLOATING VALUE AT FIRST POSITION");
 
                 Console.WriteLine("ENTER AN OPTION");
 
@@ -51,7 +51,13 @@ namespace Generics
                     case 5:
                         Maximum floatmax = new Maximum();
                         floatmax.Read_FloatInput();
-                      floatmax.fMax();
+                        floatmax.fMax();
+                        break;
+                    case 6:
+                        Maximum floatmax1 = new Maximum();
+                        floatmax1.Read_FloatInput();
+                        floatmax1.fMax();
+                        floatmax1.Float_First_Position();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");
