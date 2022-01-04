@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace Generics
 {
     internal class Maximum:Numbers
-    {  //Creating a list  
-        List<int> num = new List<int>();
+    {  //Creating a list  for integers
+     List<int> num = new List<int>();
         public int max;
+        public float fmax;
         public void ReadInput()
         {
             Console.WriteLine("ENTER A THREE NUMBERS");
@@ -80,6 +81,34 @@ namespace Generics
             }
 
         }
+        //Creating a list for floating values
+        List<float> fnum = new List<float>();
+
+        public void Read_FloatInput()
+        {
+            Console.WriteLine("ENTER A THREE FLOATING VALUES");
+            fNum1 =float.Parse(Console.ReadLine());
+            fNum2 = float.Parse(Console.ReadLine());
+            fNum3 = float.Parse(Console.ReadLine());
+
+        }
+        //MAXIMUM FLOATING VALUES 
+        public void fMax()
+
+        {
+            fnum.Add(fNum1);
+            fnum.Add(fNum2);
+            fnum.Add(fNum3);
+            Console.WriteLine("FLOATING VALUE NUMBERS ARE: ");
+            foreach (float elements in fnum)
+            {
+                Console.WriteLine(elements);
+
+            }
+            fmax = fnum.Max();
+            Console.WriteLine("MAXIMUM NUMBER IS:" + fmax);
+
+        }
 
 
     }
@@ -89,5 +118,10 @@ namespace Generics
         public int Num1 { get; set; }
         public int Num2 { get; set; }
         public int Num3 { get; set; }
+
+        public float fNum1 { get; set; }
+        public float fNum2 { get; set; }
+        public float fNum3 { get; set; }
+
     }
 }
