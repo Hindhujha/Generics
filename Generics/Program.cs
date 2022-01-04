@@ -23,6 +23,7 @@ namespace Generics
                 Console.WriteLine("9.MAXIMUM CHARACTERS IN 3 STRINGS");
                 Console.WriteLine("10.MAXIMUM CHARACTERS IN STRING AT FIRST POSITION");
                 Console.WriteLine("11.MAXIMUM CHARACTERS IN STRING AT SECOND POSITION");
+                Console.WriteLine("12.MAXIMUM CHARACTERS IN STRING AT THIRD POSITION");
                 Console.WriteLine("ENTER AN OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -91,6 +92,12 @@ namespace Generics
                         strings2.Read_StringInput();
                         strings2.Strings();
                         strings2.Strings_Second_Position();
+                        break;
+                    case 12:
+                        Maximum strings3 = new Maximum();
+                        strings3.Read_StringInput();
+                        strings3.Strings();
+                        strings3.Strings_Third_Position();
                         break;
 
                     default:

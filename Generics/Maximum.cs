@@ -229,6 +229,21 @@ namespace Generics
             }
 
         }
+        //MAXIMUM STRING SECOND POSITION
+        public void Strings_Third_Position()
+        {
+
+            if (str[2] == temp)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT THIRD POSITION:" + str[2]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT THIRD POSITION:");
+            }
+
+        }
 
     }
 
