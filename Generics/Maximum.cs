@@ -50,6 +50,21 @@ namespace Generics
             }
 
         }
+        public void Second_Position()
+        {
+
+            if (num[1] == max)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT SECOND POSITION:" + num[1]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT SECOND POSITION:");
+            }
+
+        }
+
 
 
     }
