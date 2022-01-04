@@ -124,19 +124,35 @@ namespace Generics
             }
 
         }
+        //MAXIMUM FLOATING VALUE AT SECOND POSITION
+        public void Float_Second_Position()
+        {
+
+            if (fnum[1] == fmax)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT SECOND POSITION:" + fnum[1]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT SECOND POSITION:");
+            }
+
+        }
+
 
 
     }
 
     internal class Numbers
     {
-        public int Num1 { get; set; }
-        public int Num2 { get; set; }
-        public int Num3 { get; set; }
+      public int Num1 { get; set; }
 
-        public float fNum1 { get; set; }
-        public float fNum2 { get; set; }
-        public float fNum3 { get; set; }
+      public int Num2 { get; set; }
+      public int Num3 { get; set; }
+      public float fNum1 { get; set; }
+      public float fNum2 { get; set; }
+      public float fNum3 { get; set; }
 
     }
 }
