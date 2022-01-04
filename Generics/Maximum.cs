@@ -139,6 +139,21 @@ namespace Generics
             }
 
         }
+        //MAXIMUM FLOATING VALUE AT THIRD POSITION
+        public void Float_Third_Position()
+        {
+
+            if (fnum[2] == fmax)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT SECOND POSITION:" + fnum[2]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT SECOND POSITION:");
+            }
+
+        }
 
 
 
