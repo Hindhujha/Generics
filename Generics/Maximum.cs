@@ -33,15 +33,7 @@ namespace Generics
             }
               max = num.Max();
             Console.WriteLine("MAXIMUM NUMBER IS:" + max);
-           /* if (num[0] == max)
-            {
-                Console.WriteLine("MAXIMUM NUMBER AT FIRST POSITION:" + num[0]);
-            }
-            else
-            {
-
-                Console.WriteLine("MAXIMUM NUMBER IS NOT AT FIRST POSITION:" );
-            }*/
+        
         }
 
         public void First_Position()
