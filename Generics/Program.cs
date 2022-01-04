@@ -20,6 +20,7 @@ namespace Generics
                 Console.WriteLine("6.MAXIMUM FLOATING VALUE AT FIRST POSITION");
                 Console.WriteLine("7.MAXIMUM FLOATING VALUE AT SECOND POSITION");
                 Console.WriteLine("8.MAXIMUM FLOATING VALUE AT THIRD POSITION");
+                Console.WriteLine("9.MAXIMUM CHARACTERS IN 3 STRINGS");
                 Console.WriteLine("ENTER AN OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -71,6 +72,11 @@ namespace Generics
                         floatmax3.Read_FloatInput();
                         floatmax3.fMax();
                         floatmax3.Float_Third_Position();
+                        break;
+                    case 9:
+                        Maximum strings = new Maximum();
+                        strings.Read_StringInput();
+                        strings.Strings();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");

@@ -11,6 +11,7 @@ namespace Generics
      List<int> num = new List<int>();
         public int max;
         public float fmax;
+   
         public void ReadInput()
         {
             Console.WriteLine("ENTER A THREE NUMBERS");
@@ -154,7 +155,46 @@ namespace Generics
             }
 
         }
+        List<string> str = new List<string>();
 
+        public void Read_StringInput()
+        {
+            Console.WriteLine("ENTER THREE STRINGS");
+            Str1 = Console.ReadLine();     
+            Str2 = Console.ReadLine();
+            Str3 = Console.ReadLine();
+
+        }
+        //MAXIMUM CHARACTERS IN STRING  
+        public void Strings()
+
+        {
+            str.Add(Str1);
+            str.Add(Str2);
+            str.Add(Str3);
+      
+            foreach (string elements in str)
+            {
+                Console.WriteLine(elements);
+
+            }
+          
+            int len1 = Str1.Length;
+            int len2 = Str2.Length;
+            int len3 = Str3.Length;
+          if(len1>len2 && len1>len3 )
+            {
+                Console.WriteLine("MAXIMUM CHARACTERS IN STRING IS:" + Str1);
+            }
+          else if(len2>len1 && len2>len3)
+            {
+                Console.WriteLine("MAXIMUM CHARACTERS IN STRING IS:" + Str2);
+            }
+          else
+            {
+                Console.WriteLine("MAXIMUM CHARACTERS IN STRING IS:" + Str3);
+            }
+        }
 
 
     }
@@ -168,6 +208,9 @@ namespace Generics
       public float fNum1 { get; set; }
       public float fNum2 { get; set; }
       public float fNum3 { get; set; }
+      public string Str1 { get; set; }
+      public string Str2 { get; set; }
+      public string Str3 { get; set; }
 
     }
 }
