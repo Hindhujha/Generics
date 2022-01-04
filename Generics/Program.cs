@@ -109,6 +109,10 @@ namespace Generics
                         Generic_Class obj = new Generic_Class();
                         obj.call();
                         break;
+                    case 15:
+                        Generic_Class obj1 = new Generic_Class();
+                        obj1.call();
+                        break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");
                         break;
