@@ -44,5 +44,11 @@ namespace Generics
             Generic_Class obj = new Generic_Class();
             obj.Refactor2(x,y,z,p,q,r);
         }
+        //Internally called from Refactor2 method
+        public void PrintMax()
+        {
+            Generic_Class obj1 = new Generic_Class();
+            obj1.call();
+        }
     }
 }

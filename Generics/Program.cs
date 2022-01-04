@@ -26,6 +26,7 @@ namespace Generics
                 Console.WriteLine("12.MAXIMUM CHARACTERS IN STRING AT THIRD POSITION");
                 Console.WriteLine("13.REFACTOR ALL IN ONE GENERIC METHOD");
                 Console.WriteLine("14.REFACTOR IN GENERIC CLASS");
+                Console.WriteLine("15.INTERNALLY CALLED IN PRINT MAX METHOD");
                 Console.WriteLine("ENTER AN OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -112,6 +113,10 @@ namespace Generics
                     case 15:
                         Generic_Class obj1 = new Generic_Class();
                         obj1.call();
+                        break;
+                    case 16:
+                        Generic_Class obj2 = new Generic_Class();
+                        obj2.call();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");
