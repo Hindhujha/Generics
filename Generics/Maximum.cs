@@ -199,7 +199,7 @@ namespace Generics
                 temp = Str3;
             }
         }
-        //MAXIMUM FLOATING VALUE AT FIRST POSITION
+        //MAXIMUM STRING AT FIRST POSITION
         public void Strings_First_Position()
         {
 
@@ -211,6 +211,21 @@ namespace Generics
             {
 
                 Console.WriteLine("MAXIMUM NUMBER IS NOT AT FIRST POSITION:");
+            }
+
+        }
+        //MAXIMUM STRING SECOND POSITION
+        public void Strings_Second_Position()
+        {
+
+            if (str[1] == temp)
+            {
+                Console.WriteLine("MAXIMUM NUMBER AT SECOND POSITION:" + str[1]);
+            }
+            else
+            {
+
+                Console.WriteLine("MAXIMUM NUMBER IS NOT AT SECOND POSITION:");
             }
 
         }
